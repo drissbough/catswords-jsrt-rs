@@ -2,7 +2,7 @@ use crate::error::{ok, ok_msg, Result};
 use crate::guard::Guard;
 use crate::runtime::Runtime;
 use crate::value::Value;
-use chakracore_sys as sys;
+use catswords_jsrt_sys as sys;
 
 fn to_wide(s: &str) -> Vec<u16> {
     s.encode_utf16().chain(std::iter::once(0)).collect()

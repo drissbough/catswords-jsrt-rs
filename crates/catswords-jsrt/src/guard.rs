@@ -1,5 +1,5 @@
 use crate::runtime::Runtime;
-use chakracore_sys as sys;
+use catswords_jsrt_sys as sys;
 
 pub struct Guard<'rt> {
     pub(crate) prev: sys::JsContextRef,

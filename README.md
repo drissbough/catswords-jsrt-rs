@@ -26,7 +26,7 @@ This repository is a Cargo workspace with the following crates:
   * API inspired by ChakraCore samples
   * Focused on correctness and minimal abstraction
 
-* **`chakracore-examples`**
+* **`catswords-jsrt-examples`**
 
   * Runnable example binaries
   * Used to validate real execution paths
@@ -109,7 +109,7 @@ cargo build
 
 ## Running the examples
 
-All runnable examples live in the **`chakracore-examples`** crate and are built as binaries.
+All runnable examples live in the **`catswords-jsrt-examples`** crate and are built as binaries.
 
 ### Example binaries
 
@@ -119,7 +119,7 @@ All runnable examples live in the **`chakracore-examples`** crate and are built 
 ### Example console messages
 
 ```text
-> cargo run -p chakracore-examples --bin multiply
+> cargo run -p catswords-jsrt-examples --bin multiply
     Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.09s
      Running `target\debug\multiply.exe`
 direct call: 191 * 7 = 1337
@@ -131,8 +131,8 @@ global eval: multiply(191, 7) = 1337
 ### Windows
 
 ```powershell
-cargo run -p chakracore-examples --bin hello_world
-cargo run -p chakracore-examples --bin multiply
+cargo run -p catswords-jsrt-examples --bin hello_world
+cargo run -p catswords-jsrt-examples --bin multiply
 ```
 
 If you encounter a runtime error related to missing `ChakraCore.dll`, ensure it is either:
@@ -153,18 +153,18 @@ export LD_LIBRARY_PATH="$CHAKRACORE_LIB_DIR:$LD_LIBRARY_PATH"
 Then run:
 
 ```bash
-cargo run -p chakracore-examples --bin hello_world
-cargo run -p chakracore-examples --bin multiply
+cargo run -p catswords-jsrt-examples --bin hello_world
+cargo run -p catswords-jsrt-examples --bin multiply
 ```
 
 ---
 
 ## Example: Hello World
 
-**Binary:** `chakracore-examples --bin hello_world`
+**Binary:** `catswords-jsrt-examples --bin hello_world`
 
 ```rust
-extern crate chakracore as js;
+extern crate catswords_jsrt as js;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     // 1. Create runtime
@@ -192,17 +192,17 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 Run:
 
 ```bash
-cargo run -p chakracore-examples --bin hello_world
+cargo run -p catswords-jsrt-examples --bin hello_world
 ```
 
 ---
 
 ## Example: Function – Multiply
 
-**Binary:** `chakracore-examples --bin multiply`
+**Binary:** `catswords-jsrt-examples --bin multiply`
 
 ```rust
-extern crate chakracore as js;
+extern crate catswords_jsrt as js;
 
 type AnyResult<T> = Result<T, Box<dyn std::error::Error>>;
 
@@ -266,7 +266,7 @@ fn main() -> AnyResult<()> {
 Run:
 
 ```bash
-cargo run -p chakracore-examples --bin multiply
+cargo run -p catswords-jsrt-examples --bin multiply
 ```
 
 ---

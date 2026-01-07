@@ -1,4 +1,4 @@
-extern crate chakracore as js;
+extern crate catswords_jsrt as js;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     // 1. Create runtime

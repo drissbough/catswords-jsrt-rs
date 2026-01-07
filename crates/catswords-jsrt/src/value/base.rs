@@ -1,6 +1,6 @@
 use crate::error::{ok, ok_msg, Result};
 use crate::guard::Guard;
-use chakracore_sys as sys;
+use catswords_jsrt_sys as sys;
 
 #[derive(Clone, Copy)]
 pub struct Value {

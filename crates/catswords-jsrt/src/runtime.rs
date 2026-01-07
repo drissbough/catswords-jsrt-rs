@@ -1,5 +1,5 @@
 use crate::error::{ok, Result};
-use chakracore_sys as sys;
+use catswords_jsrt_sys as sys;
 use std::ffi::c_void;
 use std::sync::{Arc, Mutex};
 

@@ -1,4 +1,4 @@
-extern crate chakracore as js;
+extern crate catswords_jsrt as js;
 
 type AnyResult<T> = Result<T, Box<dyn std::error::Error>>;
 

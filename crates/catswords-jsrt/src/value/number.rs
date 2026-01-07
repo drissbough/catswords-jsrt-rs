@@ -1,7 +1,7 @@
 use crate::error::ok;
 use crate::guard::Guard;
 use crate::value::Value;
-use chakracore_sys as sys;
+use catswords_jsrt_sys as sys;
 
 pub struct Number {
     v: Value,

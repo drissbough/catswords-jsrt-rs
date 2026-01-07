@@ -1,5 +1,5 @@
 [package]
-name = "chakracore-examples"
+name = "catswords-jsrt-examples"
 version = "0.3.0"
 edition = "2021"
 rust-version = "1.92.0"
@@ -17,7 +17,7 @@ keywords = [
 publish = false
 
 [dependencies]
-chakracore = { path = "../chakracore", version = "0.3.0" }
+catswords-jsrt = { path = "../catswords-jsrt", version = "0.3.0" }
 
 [[bin]]
 name = "hello_world"

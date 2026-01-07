@@ -1,5 +1,5 @@
 [package]
-name = "chakracore-sys"
+name = "catswords-jsrt-sys"
 version = "0.3.0"
 edition = "2021"
 rust-version = "1.92.0"
@@ -23,7 +23,7 @@ build = "build.rs"
 publish = false
 
 [lib]
-name = "chakracore_sys"
+name = "catswords_jsrt_sys"
 path = "src/lib.rs"
 
 [features]

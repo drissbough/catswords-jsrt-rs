@@ -1,5 +1,5 @@
 [package]
-name = "chakracore"
+name = "catswords-jsrt"
 version = "0.3.0"
 edition = "2021"
 rust-version = "1.92.0"
@@ -18,14 +18,14 @@ categories = ["api-bindings"]
 publish = false
 
 [lib]
-name = "chakracore"
+name = "catswords_jsrt"
 path = "src/lib.rs"
 
 [features]
 default = []
 
 [dependencies]
-chakracore-sys = { path = "../chakracore-sys", version = "0.3.0" }
+catswords-jsrt-sys = { path = "../catswords-jsrt-sys", version = "0.3.0" }
 thiserror = "2"
 
 [dev-dependencies]

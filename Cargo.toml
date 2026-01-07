@@ -1,7 +1,7 @@
 [workspace]
 members = [
-  "crates/chakracore-sys",
-  "crates/chakracore",
+  "crates/catswords-jsrt-sys",
+  "crates/catswords-jsrt",
   "crates/examples",
 ]
 

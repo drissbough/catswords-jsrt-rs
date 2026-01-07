@@ -1,4 +1,4 @@
-use chakracore_sys::JsErrorCode;
+use catswords_jsrt_sys::JsErrorCode;
 use std::borrow::Cow;
 use thiserror::Error;
 

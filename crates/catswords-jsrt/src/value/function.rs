@@ -2,7 +2,7 @@ use crate::error::{ok, Result};
 use crate::guard::Guard;
 use crate::runtime::Runtime;
 use crate::value::Value;
-use chakracore_sys as sys;
+use catswords_jsrt_sys as sys;
 use std::ffi::c_void;
 
 pub struct CallInfo {

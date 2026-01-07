@@ -1,7 +1,7 @@
 use crate::error::{ok, Result};
 use crate::guard::Guard;
 use crate::value::Value;
-use chakracore_sys as sys;
+use catswords_jsrt_sys as sys;
 
 fn to_wide_null(s: &str) -> Vec<u16> {
     let mut v: Vec<u16> = s.encode_utf16().collect();

@@ -1,6 +1,6 @@
 use crate::error::{ok_msg, Result};
 use crate::value::Value;
-use chakracore_sys as sys;
+use catswords_jsrt_sys as sys;
 
 pub struct PersistentValue {
     raw: sys::JsValueRef,
