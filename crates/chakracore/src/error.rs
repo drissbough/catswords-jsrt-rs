@@ -27,3 +27,8 @@ pub(crate) fn ok_msg(code: JsErrorCode, msg: &'static str) -> Result<()> {
         })
     }
 }
+
+#[inline]
+pub fn err_msg(code: JsErrorCode, msg: String) -> Error {
+    Error { code, message: Cow::Owned(msg) }
+}

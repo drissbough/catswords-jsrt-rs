@@ -8,8 +8,10 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Create a JS function backed by a Rust closure
     let multiply = js::value::Function::new(&guard, Box::new(|guard, info| {
         if info.arguments.len() != 2 {
-            // In future, replace with real JS Error
-            return Err(js::Error(chakracore_sys::JsErrorCode::JsErrorInvalidArgument));
+            return Err(js::err_msg(
+                js::JsErrorCode::JsErrorInvalidArgument,
+                format!("multiply expects 2 arguments, got {}", info.arguments.len()),
+            ));
         }
 
         let a = info.arguments[0].to_integer(guard)?;

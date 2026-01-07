@@ -12,3 +12,5 @@ pub use runtime::Runtime;
 pub use context::Context;
 pub use guard::Guard;
 pub use root::{RootStore, RootedValue};
+pub use chakracore_sys::JsErrorCode;
+pub use error::err_msg;
