@@ -5,6 +5,15 @@ edition = "2021"
 rust-version = "1.92.0"
 license = "MIT"
 authors = ["Namhyeon Go <gnh1201@catswords.re.kr>"]
+keywords = [
+  "chakracore",
+  "jsrt",
+  "javascript",
+  "ffi",
+  "bindings",
+  "industrial",
+  "embedded"
+]
 publish = false
 
 [dependencies]

@@ -12,7 +12,15 @@ edition = "2021"
 rust-version = "1.92.0"
 license = "MIT"
 authors = ["Namhyeon Go <gnh1201@catswords.re.kr>"]
-repository = "https://github.com/catswords/chakracore-rs"
+repository = "https://github.com/gnh1201/chakracore-rs"
+keywords = [
+  "chakracore",
+  "javascript",
+  "runtime",
+  "industrial",
+  "embedded"
+]
+categories = ["api-bindings"]
 
 [workspace.dependencies]
 cc = "1"
