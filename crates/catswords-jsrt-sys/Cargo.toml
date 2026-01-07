@@ -12,9 +12,7 @@ keywords = [
   "jsrt",
   "javascript",
   "ffi",
-  "bindings",
-  "industrial",
-  "embedded"
+  "bindings"
 ]
 categories = ["external-ffi-bindings"]
 
